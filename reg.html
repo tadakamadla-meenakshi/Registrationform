@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -5,54 +6,109 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
+
         <form id="registrationForm" novalidate>
+
             <h2>Create Account</h2>
 
+            <!-- Full Name -->
             <div class="form-group">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
                 <small id="nameError"></small>
             </div>
 
+            <!-- Email -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
                 <small id="emailError"></small>
             </div>
 
+            <!-- Primary Phone -->
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Enter 10-digit phone number">
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter 10-digit phone number"
+                    maxlength="10"
+                >
                 <small id="phoneError"></small>
             </div>
 
+            <!-- Alternate Phone -->
+            <div class="form-group">
+                <label for="alternatePhone">
+                    Alternate Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="alternatePhone"
+                    placeholder="Enter alternate 10-digit phone number"
+                    maxlength="10"
+                >
+
+                <small id="alternatePhoneError"></small>
+            </div>
+
+            <!-- Password -->
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                >
                 <small id="passwordError"></small>
             </div>
 
+            <!-- Confirm Password -->
             <div class="form-group">
                 <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" placeholder="Confirm password">
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                >
                 <small id="confirmPasswordError"></small>
             </div>
 
+            <!-- Terms -->
             <div class="terms">
                 <input type="checkbox" id="terms">
-                <label for="terms">I agree to the terms and conditions</label>
+
+                <label for="terms">
+                    I agree to the terms and conditions
+                </label>
             </div>
+
             <small id="termsError"></small>
 
+            <!-- Submit -->
             <button type="submit">Register</button>
 
+            <!-- Success Message -->
             <p id="successMessage"></p>
+
         </form>
+
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
